@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galaxy Sports Arena</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- OPENING SCREEN -->
+<div id="openingScreen" class="screen active">
+  <canvas id="starsCanvas"></canvas>
+  <div class="opening-content">
+    <div class="drigger-container">
+      <img src="https://i.imgur.com/placeholder.png" id="driggerImg" alt="Drigger"/>
+      <div class="drigger-glow"></div>
+    </div>
+    <h1 class="galaxy-title">GALAXY SPORTS ARENA</h1>
+    <p class="subtitle">Powered by AI • 6 Epic Games</p>
+    <div class="click-prompt">Click Anywhere To Enter</div>
+  </div>
+</div>
+
+<!-- HOME SCREEN -->
+<div id="homeScreen" class="screen">
+  <canvas id="starsCanvas2"></canvas>
+  <div class="home-content">
+    <h1 class="home-title">GALAXY SPORTS ARENA</h1>
+    <p class="home-sub">Choose Your Game</p>
+    <div class="games-grid">
+      <div class="game-card" onclick="startGame('beyblade')">
+        <div class="game-icon">⚡</div>
+        <div class="game-name">BEYBLADE</div>
+        <div class="game-desc">Spin & Battle AI</div>
+        <button class="play-btn">PLAY</button>
+      </div>
+      <div class="game-card" onclick="startGame('cricket')">
+        <div class="game-icon">🏏</div>
+        <div class="game-name">CRICKET</div>
+        <div class="game-desc">Face AI Bowler</div>
+        <button class="play-btn">PLAY</button>
+      </div>
+      <div class="game-card" onclick="startGame('volleyball')">
+        <div class="game-icon">🏐</div>
+        <div class="game-name">VOLLEYBALL</div>
+        <div class="game-desc">Spike & Defend</div>
+        <button class="play-btn">PLAY</button>
+      </div>
+      <div class="game-card" onclick="startGame('tabletennis')">
+        <div class="game-icon">🏓</div>
+        <div class="game-name">TABLE TENNIS</div>
+        <div class="game-desc">Rally Against AI</div>
+        <button class="play-btn">PLAY</button>
+      </div>
+      <div class="game-card" onclick="startGame('kabaddi')">
+        <div class="game-icon">🤼</div>
+        <div class="game-name">KABADDI</div>
+        <div class="game-desc">Raid & Escape</div>
+        <button class="play-btn">PLAY</button>
+      </div>
+      <div class="game-card" onclick="startGame('khokho')">
+        <div class="game-icon">🏃</div>
+        <div class="game-name">KHO-KHO</div>
+        <div class="game-desc">Run & Dodge AI</div>
+        <button class="play-btn">PLAY</button>
+      </div>
+    </div>
+    <div class="home-footer">Arrow Keys / WASD to Move • Space to Action • Mouse to Aim</div>
+  </div>
+</div>
+
+<!-- GAME SCREEN -->
+<div id="gameScreen" class="screen">
+  <div class="game-header">
+    <button class="back-btn" onclick="goHome()">HOME</button>
+    <div id="gameTitle" class="game-title-header"></div>
+    <div class="score-display">Score: <span id="scoreDisplay">0</span></div>
+  </div>
+  <canvas id="gameCanvas"></canvas>
+  <div class="controls-hint" id="controlsHint"></div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
