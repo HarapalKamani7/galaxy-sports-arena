@@ -8,7 +8,6 @@ that you can play directly in your browser using keyboard and mouse controls.
 
 
 ## Games Included
-
 1. Beyblade Battle — Spin your beyblade and battle an AI opponent in a galaxy arena
 2. Space Cricket — Face an AI bowler and time your shots to score runs
 3. Galaxy Volleyball — Control your player and spike against the AI
